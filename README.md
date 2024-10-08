@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignite Shop - Carrinho de Compras
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+Este projeto foi desenvolvido como parte do Desafio 04 da trilha de ReactJS do Ignite da Rocketseat. O objetivo foi implementar novas funcionalidades ao Ignite Shop, permitindo que os usuários adicionem e removam itens de um carrinho de compras e, em seguida, prossigam para o checkout utilizando a API do Stripe.
+
+## 💻 Funcionalidades
+
+Adicionar produtos ao carrinho diretamente na página de detalhes do produto.
+Exibir o número de itens no carrinho no cabeçalho da aplicação.
+Remover itens do carrinho antes de finalizar a compra.
+Enviar o carrinho com os itens selecionados para o Stripe, gerando uma sessão de checkout para finalização da compra.
+Integração com a API do Stripe para obter os produtos e processar o pagamento.
+
+## 🚀 Tecnologias Utilizadas
+
+ReactJS: Biblioteca JavaScript para criação de interfaces de usuário.
+Next.js: Framework para React com funcionalidades de renderização no servidor.
+TypeScript: Superset de JavaScript que adiciona tipagem estática.
+Stripe API: Utilizada para gerenciamento de produtos e criação de sessões de checkout.
+use-shopping-cart: Biblioteca utilizada para facilitar a lógica de carrinho de compras e integração com o Stripe.
+
+## 🛠️ Como Executar o Projeto
+Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/ignite-shop.git
+```
+Acesse a pasta do projeto:
+```bash
+cd ignite-shop
+```
+Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
+Crie um arquivo .env.local e adicione suas chaves da Stripe:
 
 ```bash
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your-public-key
+STRIPE_SECRET_KEY=your-secret-key
+```
+
+Execute o projeto:
+```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse o projeto em http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 📚 Layout
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+O layout do projeto foi baseado no design disponibilizado no Figma. Para acessá-lo, clique aqui.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 📄 Licença
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está sob a licença MIT. Para mais detalhes, veja o arquivo LICENSE.
